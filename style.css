@@ -1,0 +1,225 @@
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* Common Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.orange-color {
+    color: orange;
+}
+
+
+/*======================
+    Top Banner Styles
+ ==========================*/
+ .container {
+    width: 100%;
+    height: 100%;
+ }
+ .top-banner {
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+ }
+ .top-details {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 100px 102px 240px 156px;
+ }
+ .top-details h1 {
+
+    margin-bottom: 27px;
+ }
+ .top-icon {
+    background-color: #E02C6D;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 24px;
+    width: 168px;
+    height: 38px;
+ }
+ .top-icon a,i {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 8px;
+ }
+ .top-pic {
+    margin: 0px 141px 86px 102px;
+ }
+
+ .top-pic img{
+    width: 556.01px;
+    height: 438px;
+    transition: all .6s;
+ }
+ .top-pic img:hover {
+    transform: rotate(10deg) scale(.8);
+ }
+
+ /*=======================
+    Famous Player Style
+ ========================= */
+ .famous-player {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+ }
+ .players {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 30px;
+     grid-column-gap: 27px;
+ }
+.player {
+    width: 330px;
+    height: 480px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+ .player-img img {
+    margin: 15px 15px;
+    width: 300px;
+    height: 256px;
+ }
+ .player-detail {
+    margin: 0px 15px 33px 15px;
+ }
+ .player-detail h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
+
+ /* ======================
+    Footer Style
+   ======================== */
+footer {
+    margin-top: 100px;
+    margin-bottom: 63px;
+}
+.footer-img img {
+    width: 483.87px;
+    height: 110px;
+}
+.footer-icons i{
+    color: #808080;
+    font-size: 25px;
+}
+
+/*======================
+    Latest News Style
+    ===================== */
+.latest-news {
+    margin-top: 100px;
+}
+.all-news {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+}
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+
+}
+.section-title h1,i,a{
+    color: white;
+}
+.section-title a,i {
+    font-size: 20px; 
+    text-decoration: none; 
+}
+.section-title .news-links:hover a{
+    text-decoration: underline;
+}
+.news {
+    height: 600px;
+    width: 310px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px #808080;
+}
+.news-thumb img {
+    height: 200px;
+    width: 95%;
+    margin:10px 5px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+}
+.news-heading {
+    color: saddlebrown;
+    margin-bottom: 0;
+}
+.news-detail, .news-heading{
+    margin-left: 10px;
+}
+.news-heading hr {
+    margin: 0 10px;
+    border: 1px solid pink;
+}
+.news-detail a {
+    visibility: hidden;
+    color: pink;
+    text-decoration: none;
+}
+.fa-heart {
+    color: black;
+}
+.fa-heart:active {
+    transform: scale(.6);
+    transition: transform .3s;
+}
+
+/* All Star Euro Team Style */
+.all-star-euro {
+    /* background-image: url(images/football.jpg); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.692) 0%,rgba(0, 0, 0, 0.733) 100%), url(images/match.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 40px 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.event-detail {
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.event-detail h1 {
+    color: linen;
+}
+.ticket-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-detail a {
+    background-image: linear-gradient(tomato, salmon);
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.ticket-link {
+    margin-right: 10px;
+}
+.ticket-link:hover{
+    transform: scale(.9);
+    transition: transform .6s;
+    box-shadow: 10px 10px 30px 10px gray;
+}
