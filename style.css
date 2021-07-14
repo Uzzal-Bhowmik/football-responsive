@@ -53,6 +53,12 @@ body {
     text-decoration: none;
     margin-right: 8px;
  }
+ .top-icon:hover a{
+    color: navy;
+ }
+ .top-icon:hover i{
+     color: navy;
+ }
  .top-pic {
     margin: 0px 141px 86px 102px;
  }
@@ -194,6 +200,9 @@ All Star Euro Team Style
 .event-detail h1 {
     color: linen;
 }
+.event-detail em {
+    color: orangered;
+}
 .ticket-detail {
     display: flex;
     justify-content: center;
@@ -298,9 +307,7 @@ footer {
 
 /* Tablet Devices */
 @media only screen and (min-width: 689px) and (max-width: 1000px){
-    main {
-        /* overflow: hidden; */
-    }
+
     .top-banner{
         width: 100%;
         flex-direction: column;
