@@ -358,4 +358,10 @@ footer {
     }
     
 }
+
+@media only screen and (min-width: 1500px) {
+    .all-news {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
     
