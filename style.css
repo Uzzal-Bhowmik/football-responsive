@@ -124,7 +124,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
-
+    border: 8px solid thistle;
 }
 .section-title h1,i,a{
     color: white;
