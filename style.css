@@ -84,7 +84,6 @@ body {
     width: 330px;
     height: 480px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
 }
  .player-img img {
     margin: 15px 15px;
@@ -99,21 +98,6 @@ body {
     margin-bottom: 10px;
  }
 
- /* ======================
-    Footer Style
-   ======================== */
-footer {
-    margin-top: 100px;
-    margin-bottom: 63px;
-}
-.footer-img img {
-    width: 483.87px;
-    height: 110px;
-}
-.footer-icons i{
-    color: #808080;
-    font-size: 25px;
-}
 
 /*======================
     Latest News Style
@@ -125,7 +109,7 @@ footer {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 10px;
     grid-row-gap: 40px;
 }
 .section-title {
@@ -146,17 +130,24 @@ footer {
     text-decoration: underline;
 }
 .news {
-    height: 600px;
+    height: 500px;
     width: 310px;
+    border: 1px solid salmon;
     border-radius: 10px;
     box-shadow: 5px 5px 30px #808080;
+    overflow: hidden;
 }
 .news-thumb img {
     height: 200px;
     width: 95%;
-    margin:10px 5px;
+    margin:5px 5px;
     border: 2px solid tomato;
     border-radius: 10px;
+    overflow: hidden;
+    transition: transform .4s ease-in-out;
+}
+.news-thumb img:hover {
+    transform: scale(1.2);
 }
 .news-heading {
     color: saddlebrown;
@@ -182,13 +173,15 @@ footer {
     transition: transform .3s;
 }
 
-/* All Star Euro Team Style */
+/*======================
+All Star Euro Team Style
+======================================*/
 .all-star-euro {
     /* background-image: url(images/football.jpg); */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.692) 0%,rgba(0, 0, 0, 0.733) 100%), url(images/match.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     padding: 40px 0px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -205,6 +198,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .ticket-detail a {
@@ -222,4 +216,84 @@ footer {
     transform: scale(.9);
     transition: transform .6s;
     box-shadow: 10px 10px 30px 10px gray;
+}
+
+ /* ======================
+    Footer Style
+   ======================== */
+footer {
+    margin-top: 100px;
+    margin-bottom: 63px;
+}
+.footer-img img {
+    width: 483.87px;
+    height: 110px;
+}
+.footer-icons i{
+    color: #808080;
+    font-size: 25px;
+}
+
+
+/*===================
+    Media Queries
+====================== */
+
+@media only screen and (max-width: 688px) {
+    main {
+        overflow: hidden;
+    }
+    .top-banner{
+        width: 100%;
+        flex-direction: column;
+    }
+    .top-details {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .top-pic img{
+        width: 300px;
+        height: 300px;
+    }
+    .famous-player {
+        justify-content: center;
+    }
+    .players {
+        grid-template-columns: 1fr;
+    }
+    .all-news {
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+    }
+    .title-header h1 {
+        color: black;
+    }
+    .news-links a,i {
+        color: black;
+    }
+    .news {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .all-star-euro {
+        height: 100%;
+    }
+    .ticket-detail {
+        flex-direction: column;
+    }
+    .ticket-link {
+        margin-bottom: 40px;
+    }
+    .footer-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and min-wi {
+    
 }
